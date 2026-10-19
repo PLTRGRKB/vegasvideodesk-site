@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vegas Video Desk — Launching soon</title>
+<meta name="description" content="Cinematic listing videos for Las Vegas real estate, made from the photos you already have. Launching soon.">
+<meta name="theme-color" content="#ffffff">
+<style>
+  :root{--ink:#111316;--muted:#5f6670;--line:#e8eaee;--accent:#111316;--soft:#f6f7f9}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:#fff;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.5;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+  .wrap{width:100%;max-width:720px;margin:0 auto;padding:0 24px}
+  header{padding:calc(24px + env(safe-area-inset-top)) 0 0}
+  .mark{font-weight:700;font-size:17px;letter-spacing:-.01em;display:inline-flex;align-items:center;gap:10px}
+  .dot{width:10px;height:10px;border-radius:50%;background:var(--ink)}
+  main{flex:1;display:flex;align-items:center;padding:40px 0}
+  .badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 12px;margin-bottom:28px}
+  .badge i{width:7px;height:7px;border-radius:50%;background:#2fbf71;box-shadow:0 0 0 4px rgba(47,191,113,.15)}
+  h1{font-size:clamp(38px,9vw,64px);line-height:1.04;letter-spacing:-.035em;font-weight:750;max-width:14ch;text-wrap:balance}
+  .sub{margin-top:20px;font-size:clamp(17px,2.4vw,20px);color:var(--muted);max-width:40ch;text-wrap:pretty}
+  ol{list-style:none;margin:36px 0 0;display:grid;gap:14px}
+  ol li{display:flex;align-items:center;gap:14px;font-size:17px;font-weight:500}
+  ol li span{flex:none;width:30px;height:30px;border-radius:50%;background:var(--soft);border:1px solid var(--line);display:grid;place-items:center;font-size:14px;font-weight:700}
+  .cta{margin-top:36px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px}
+  .btn{display:inline-flex;justify-content:center;align-items:center;min-height:52px;padding:0 28px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:17px;transition:transform .15s ease,opacity .15s ease}
+  .btn:hover{opacity:.88}.btn:active{transform:scale(.98)}
+  .btn:focus-visible,.email:focus-visible{outline:3px solid #8ab4ff;outline-offset:3px}
+  .email{color:var(--muted);text-decoration:none;font-size:16px;border-bottom:1px solid var(--line)}
+  .email:hover{color:var(--ink)}
+  footer{border-top:1px solid var(--line);padding:22px 0 calc(22px + env(safe-area-inset-bottom));font-size:13px;color:var(--muted)}
+  @media (max-width:480px){.cta{flex-direction:column;align-items:stretch}.btn{width:100%}.email{align-self:flex-start}main{padding:44px 0 40px}}
+</style>
+</head>
+<body>
+  <header><div class="wrap"><div class="mark"><span class="dot" aria-hidden="true"></span>Vegas Video Desk</div></div></header>
+  <main><div class="wrap">
+    <div class="badge"><i aria-hidden="true"></i>Launching soon</div>
+    <h1>Upload your listing photos. You’re done.</h1>
+    <p class="sub">Cinematic listing videos for Las Vegas real estate, made from the photos you already have.</p>
+    <ol aria-label="How it works">
+      <li><span>1</span>Send your listing photos</li>
+      <li><span>2</span>We build the video</li>
+      <li><span>3</span>You post it</li>
+    </ol>
+    <div class="cta">
+      <a class="btn" href="mailto:sales@vegasvideodesk.com">Contact us</a>
+      <a class="email" href="mailto:sales@vegasvideodesk.com">sales@vegasvideodesk.com</a>
+    </div>
+  </div></main>
+  <footer><div class="wrap">© 2026 Vegas Video Desk · Las Vegas, NV</div></footer>
+</body>
+</html>
