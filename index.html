@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Vegas Video Desk — Launching soon</title>
-<meta name="description" content="Cinematic listing videos for Las Vegas real estate, made from the photos you already have. Launching soon.">
+<meta name="description" content="Listing videos made for Las Vegas and Henderson homes. Launching soon.">
 <meta name="theme-color" content="#ffffff">
 <style>
   :root{--ink:#111316;--muted:#5f6670;--line:#e8eaee;--accent:#111316;--soft:#f6f7f9}
@@ -15,7 +15,7 @@
   header{padding:calc(24px + env(safe-area-inset-top)) 0 0}
   .mark{font-weight:700;font-size:17px;letter-spacing:-.01em;display:inline-flex;align-items:center;gap:10px}
   .dot{width:10px;height:10px;border-radius:50%;background:var(--ink)}
-  main{flex:1;display:flex;align-items:center;padding:40px 0}
+  main{flex:1;display:flex;align-items:center;padding:16px 0}
   .badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 12px;margin-bottom:28px}
   .badge i{width:7px;height:7px;border-radius:50%;background:#2fbf71;box-shadow:0 0 0 4px rgba(47,191,113,.15)}
   h1{font-size:clamp(38px,9vw,64px);line-height:1.04;letter-spacing:-.035em;font-weight:750;max-width:14ch;text-wrap:balance}
@@ -31,24 +31,48 @@
   .email:hover{color:var(--ink)}
   footer{border-top:1px solid var(--line);padding:22px 0 calc(22px + env(safe-area-inset-bottom));font-size:13px;color:var(--muted)}
   @media (max-width:480px){.cta{flex-direction:column;align-items:stretch}.btn{width:100%}.email{align-self:flex-start}main{padding:44px 0 40px}}
+  .note{margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+  .note label{display:block;font-size:17px;font-weight:600;margin-bottom:12px}
+  .row{display:flex;gap:10px;flex-wrap:wrap}
+  .row input{flex:1;min-width:0;min-height:52px;padding:0 16px;border:1px solid #cfd3da;border-radius:12px;font:inherit;font-size:17px}
+  .row button{border:0;cursor:pointer;font:inherit}
+  .fine{margin-top:10px;font-size:13px;color:var(--muted)}
+  ol li{align-items:flex-start}ol li span{margin-top:-2px}
+  @media (max-width:480px){.row{flex-direction:column}.row button{width:100%}}
+  .note{margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+  .note label{display:block;font-size:17px;font-weight:600;margin-bottom:12px}
+  .row{display:flex;gap:10px;flex-wrap:wrap}
+  .row input{flex:1;min-width:0;min-height:52px;padding:0 16px;border:1px solid #cfd3da;border-radius:12px;font:inherit;font-size:17px}
+  .row button{border:0;cursor:pointer;font:inherit}
+  .fine{margin-top:10px;font-size:13px;color:var(--muted)}
+  ol li{align-items:flex-start}ol li span{margin-top:-2px}
+  @media (max-width:480px){.row{flex-direction:column}.row button{width:100%}}
+  .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 10px;margin-bottom:12px}
+  h1{font-size:clamp(30px,5.2vw,52px);max-width:20ch}
+  .loc{margin-top:8px;font-size:17px;color:var(--muted);font-weight:500}
+  .hero{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;background:#d9dde3;margin:18px 0 0}
+  .note{margin-top:18px;padding-top:0;border-top:0}
+  .row{align-items:center}
+  .row label{flex:none;font-size:16px;font-weight:600;margin:0 4px 0 0}
+  .row input{min-height:46px}.row .btn{min-height:46px;padding:0 20px}
+  header{padding-top:calc(14px + env(safe-area-inset-top))}
+  footer{padding:12px 0 calc(12px + env(safe-area-inset-bottom))}
+  @media (max-width:480px){h1{font-size:30px}.row{flex-direction:row;flex-wrap:wrap}.row label{width:100%;margin-bottom:2px}.row .btn{width:auto}.wrap{padding:0 18px}}
+  .row input:disabled,.row .btn:disabled{opacity:.55;cursor:not-allowed}
 </style>
 </head>
 <body>
   <header><div class="wrap"><div class="mark"><span class="dot" aria-hidden="true"></span>Vegas Video Desk</div></div></header>
   <main><div class="wrap">
-    <div class="badge"><i aria-hidden="true"></i>Launching soon</div>
-    <h1>Upload your listing photos. You’re done.</h1>
-    <p class="sub">Cinematic listing videos for Las Vegas real estate, made from the photos you already have.</p>
-    <ol aria-label="How it works">
-      <li><span>1</span>Send your listing photos</li>
-      <li><span>2</span>We build the video</li>
-      <li><span>3</span>You post it</li>
-    </ol>
-    <div class="cta">
-      <a class="btn" href="mailto:sales@vegasvideodesk.com">Contact us</a>
-      <a class="email" href="mailto:sales@vegasvideodesk.com">sales@vegasvideodesk.com</a>
-    </div>
+    <div class="tag">Launching soon</div>
+    <h1>Send listing photos. We build the video. You post it.</h1>
+    <p class="loc">Las Vegas &amp; Henderson</p>
+    <div class="hero" aria-hidden="true"></div>
+    <form class="note" aria-disabled="true" onsubmit="return false">
+      <div class="row"><label for="em">Get launch updates</label><input id="em" type="email" placeholder="you@example.com" autocomplete="email" disabled><button class="btn" type="button" disabled>Notify me</button></div>
+      <p class="fine">Sign-ups open soon. We'll only use your email to let you know when we're live. No spam, ever.</p>
+    </form>
   </div></main>
-  <footer><div class="wrap">© 2026 Vegas Video Desk · Las Vegas, NV</div></footer>
+  <footer><div class="wrap">© 2026 Vegas Video Desk</div></footer>
 </body>
 </html>
