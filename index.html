@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Vegas Video Desk — Launching soon</title>
-<meta name="description" content="Listing videos made for Las Vegas and Henderson homes. Launching soon.">
+<title>Vegas Video Desk — 3D listing videos</title>
+<meta name="description" content="Your listing photos, moving in 3D. First video free for Las Vegas and Henderson agents.">
 <meta name="theme-color" content="#ffffff">
 <style>
   :root{--ink:#111316;--muted:#5f6670;--line:#e8eaee;--accent:#111316;--soft:#f6f7f9}
@@ -59,19 +59,56 @@
   footer{padding:12px 0 calc(12px + env(safe-area-inset-bottom))}
   @media (max-width:480px){h1{font-size:30px}.row{flex-direction:row;flex-wrap:wrap}.row label{width:100%;margin-bottom:2px}.row .btn{width:auto}.wrap{padding:0 18px}}
   .row input:disabled,.row .btn:disabled{opacity:.55;cursor:not-allowed}
+  .demo{margin:18px 0 0}
+  .demo .hero{aspect-ratio:960/924;object-fit:cover;margin:0;background:#fff;border-radius:10px}
+  .demo figcaption{margin-top:10px;font-size:15px;font-weight:600}
+  .demo figcaption span{display:block;font-size:12px;font-weight:400;color:var(--muted)}
+  .btn.big{display:flex;width:100%;margin-top:22px;min-height:56px;font-size:18px}
+  .center{text-align:center}
+  h2{font-size:22px;letter-spacing:-.02em;margin-bottom:12px}
+  .stack,.guarantee{margin-top:32px;padding:22px;border:1px solid var(--line);border-radius:14px;background:var(--soft)}
+  .stack ul{list-style:none;display:grid;gap:10px}
+  .stack li{padding-left:28px;position:relative;font-size:16px}
+  .stack li:before{content:"\2713";position:absolute;left:0;font-weight:800;color:#2fbf71}
+  .price{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:16px}
+  .guarantee{background:#111316;color:#fff}
+  .guarantee p{color:#d7dbe0}
+  .pain{margin-top:32px}.pain p{color:var(--muted);font-size:16px}
+  .guarantee p+p{margin-top:10px}.guarantee b{color:#fff}
 </style>
 </head>
 <body>
   <header><div class="wrap"><div class="mark"><span class="dot" aria-hidden="true"></span>Vegas Video Desk</div></div></header>
   <main><div class="wrap">
-    <div class="tag">Launching soon</div>
-    <h1>Send listing photos. We build the video. You post it.</h1>
-    <p class="loc">Las Vegas &amp; Henderson</p>
-    <div class="hero" aria-hidden="true"></div>
-    <form class="note" aria-disabled="true" onsubmit="return false">
-      <div class="row"><label for="em">Get launch updates</label><input id="em" type="email" placeholder="you@example.com" autocomplete="email" disabled><button class="btn" type="button" disabled>Notify me</button></div>
-      <p class="fine">Sign-ups open soon. We'll only use your email to let you know when we're live. No spam, ever.</p>
-    </form>
+    <div class="tag">Las Vegas &amp; Henderson agents</div>
+    <h1>Your listing photos, moving in 3D.</h1>
+    <p class="loc">Stop the scroll, wow your sellers, and look like the top agent in town. No shoot, no scheduling. You already have the photos.</p>
+    <figure class="demo">
+      <video class="hero" src="assets/demo.mp4" poster="assets/demo-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Before and after: a listing photo on the left, the same room as a 3D video on the right"></video>
+      <figcaption>Your photo in. Your 3D video out. <span>Sample made with AI-generated rooms.</span></figcaption>
+    </figure>
+    <a class="btn big" href="https://tally.so/r/1W4VJ1">Get my first video free</a>
+    <p class="fine center">First 20 Vegas agents only. No card needed.</p>
+    <section class="pain">
+      <h2>Video without the videographer</h2>
+      <p>A video shoot means booking a crew, opening the house again, and waiting days. That is a lot of hassle for one listing. We use the listing photos you already have.</p>
+    </section>
+    <section class="stack">
+      <h2>What you get with every listing</h2>
+      <ul>
+        <li><b>Vertical 3D video</b> for Reels, TikTok and Shorts</li>
+        <li><b>Wide version</b> for your MLS, YouTube and listing page</li>
+        <li><b>One free redo</b> if a shot isn't right</li>
+        <li><b>Every clip checked by a real person.</b> AI can sometimes add things that aren't really there. We check every clip against your photos and fix anything that doesn't match your home.</li>
+      </ul>
+      <p class="price">After your free video: <b>$69 per listing.</b> No contract.</p>
+    </section>
+    <section class="guarantee">
+      <h2>Love it or you don't pay</h2>
+      <p>You see your video before you pay anything. If you don't love it, you owe nothing.</p>
+    </section>
+    <a class="btn big" href="https://tally.so/r/1W4VJ1">Get my first video free</a>
+    <p class="fine center">Takes about 2 minutes. Questions? <a class="email" href="mailto:sales@vegasvideodesk.com">sales@vegasvideodesk.com</a></p>
   </div></main>
   <footer><div class="wrap">© 2026 Vegas Video Desk</div></footer>
 </body>
